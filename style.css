@@ -1,0 +1,98 @@
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+body{
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+main{
+    background-color: white;
+    height: auto;
+    width: 18rem;
+    border-radius: 15px;
+    margin: auto;
+}
+.component-img{
+    height: 12rem;
+    width: 18rem;
+    border-radius: 15px 15px 0 0;
+}
+.info-container{
+    padding: 1.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.info-container h4{
+    font-size: 15px;
+    margin: 0 0 1rem 0;
+    color: var(--VeryDarkGrayishBlue);
+}
+#info-p{
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+    color: var(--DesaturatedDarkBlue);
+    margin-bottom: 2rem;
+}
+.profile-pic{
+    background-image: url("./images/avatar-michelle.jpg");
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-size: contain;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+.profile-container{
+    display: flex;
+    align-items: center;
+}
+.profile-text-container{
+    display: flex;
+    flex-direction: column;
+}
+.profile-text-container h5{
+    margin: 0;
+    font-size: 13px;
+    color: var(--VeryDarkGrayishBlue);
+    margin-bottom: 0.2rem;
+}
+.profile-text-container p{
+    margin: 0;
+    color: var(--DesaturatedDarkBlue);
+    font-size: 14px;
+}
+.share-icon-container{
+    background-color: var(--LightGrayishBlue);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+.share-icon-container span{
+    background-image: url("./images/icon-share.svg");
+    display: block;
+    height: 14px;
+    width: 14px;
+    background-repeat: no-repeat;
+}
+@media (min-width:1281px) { 
+    main{
+        width: 44rem;
+        height: 18rem;
+        display: flex;
+    }
+    .component-img{
+        height: auto;
+    }
+}
