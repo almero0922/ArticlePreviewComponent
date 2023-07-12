@@ -88,11 +88,22 @@ main{
 }
 @media (min-width:1281px) { 
     main{
-        width: 44rem;
+        width: 48rem;
         height: 18rem;
         display: flex;
     }
     .component-img{
-        height: auto;
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+        border: none;
+    }
+    .info-container{
+        padding: 2rem;
+    }
+    .info-container h4{
+        font-size: 20px;
+    }
+    #info-p{
+        font-size: 13.8px;
     }
 }
